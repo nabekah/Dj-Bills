@@ -12,6 +12,7 @@ import { useLastViewedPhoto } from '../utils/useLastViewedPhoto'
 import Navbar from '../components/Navbar'
 import Hero  from '../components/Hero'
 import About from '../components/About'
+import Awards from '../components/Awards'
 
 const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   const router = useRouter()
@@ -58,6 +59,10 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
         </div>
         <div className="">
         <About />
+        
+       </div>
+       <div className='bg-gray-200'>
+       <Awards />
        </div>
         //gallery
 

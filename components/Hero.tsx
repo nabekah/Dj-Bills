@@ -26,7 +26,7 @@ const Hero = () => (
       </h1>
       <p className={`font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px] max-w-[470px] mt-5`}>
       Presenter | Producer at adom 106.3 fm, Ghana
-      <br className='sm:block hidden' />Join<span className="inline-block text-gray-700 text-center bg-gray-400 px-1 py-0 m-1 rounded-[6px]">Efiada Mbosuo</span>live on Adom 106.3 FM from 7pm till 11pm every friday
+      <br className='sm:block hidden' />Join<span className="inline-block text-teal-700 text-center bg-gray-400 px-1 py-0 m-1 rounded-[6px]">Efiada Mbosuo</span>live on Adom 106.3 FM from 7pm till 11pm every friday
       </p>
     </div>
     <div className="flex-1  flex justify-center items-center md:my-0 my-10 relative">
