@@ -8,7 +8,7 @@ import close from "./close.svg";
 
 import discount from "./Discount.svg";
 import feature from "./p1.png"
-
+import arrowUp from "./Radio.svg"
 
 export {
   
@@ -18,7 +18,7 @@ export {
   feature,
   menu,
   close,
-  
+  arrowUp,
   discount,
  
 };

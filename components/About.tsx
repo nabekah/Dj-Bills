@@ -23,7 +23,7 @@ const features = [
 
 export default function About() {
   return (
-    <div className="overflow-hidden bg-gray-200 py-24 sm:py-32">
+    <div className="overflow-hidden bg-slate-300 py-24 sm:py-32">
       <div className=" flex flex-col md:flex-row mx-auto max-w-7xl px-6 lg:px-8 gap-2">
         <div className="flex-1 flex justify-center items-center md:my-0 my-10 opacity-80 relative overflow-hidden hover:opacity-100" >
             <Image
