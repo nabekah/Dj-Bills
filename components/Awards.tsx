@@ -30,7 +30,8 @@ export default function Awards() {
    const eachaward= data.map( item => {
     
     return(
-     <div key={item.id} className="relative px-9 mx-6 py-4 my-4 bg-gray-300">
+     
+     <div key={item.id} className="relative px-9 mx-6 py-4 my-4 bg-gray-200 border-2 rounded-md shadow-md">
       <div className="border-2 rounded-md text-sm text-center absolute top-[-20px] left-[-20px] w-14 h-8 font-semibold bg-cyan-200 m-2 p-2 text-gray-500 shadow-2xl shadow-slate-800">
        {item.year}
         </div>
@@ -46,7 +47,7 @@ export default function Awards() {
    )
   return (
     <section className='text-gray-800 mt-4'>
-      <div className="flex flex-row items-center justify-between">
+      <div className="grid grid-flow-row md:grid-flow-col gap-4 md:grid-cols-3 xl:grid-cols-4">
       {eachaward}
       </div>
       
