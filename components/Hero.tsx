@@ -3,6 +3,7 @@ import React from 'react'
 import {discount, robot} from './assets'
 import GetStarted from './GetStarted'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 const Hero = () => (
@@ -18,7 +19,7 @@ const Hero = () => (
       <div className='flex flex-row justify-between items-center w-full'>
         <h1 className='flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px]'>Let's create <br className='sm:block hidden' /> {" "}<span className='text-gradient'>unforgettable</span> {" "}</h1>
         <div className='ss:flex hidden md:mr-4 mr-0'>
-          <GetStarted />
+        <Link href="https://liveonlineradio.net/iframe/?p=adom-fm"><GetStarted /></Link>  
         </div>
 
       </div>
@@ -32,11 +33,11 @@ const Hero = () => (
     <div className="flex-1  flex justify-center items-center md:my-0 my-10 relative">
       <Image 
           src={robot} 
-          width='960'
-          height='640'
+          width='571'
+          height='493'
           alt="dj bills" 
           priority={true}
-          className='w-[80%] h-[100%] xs:w-[100%] xs:h-[90%] relative z-[5] rounded-full cursor-pointer filter grayscale hover:grayscale-0 shadow-2xl transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-white/30' 
+          className='relative z-[5] w-[80%] h-[80%] md:w-[100%] md:h-[100%]  rounded-full cursor-pointer filter grayscale hover:grayscale-0 shadow-2xl transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-white/30' 
           
       />
       <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />

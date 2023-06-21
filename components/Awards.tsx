@@ -32,12 +32,12 @@ export default function Awards() {
     return(
      
      <div key={item.id} className="relative px-9 mx-6 py-4 my-4 bg-gray-200 border-2 rounded-md shadow-md">
-      <div className="border-2 rounded-md text-sm text-center absolute top-[-20px] left-[-20px] w-14 h-8 font-semibold bg-cyan-200 m-2 p-2 text-gray-500 shadow-2xl shadow-slate-800">
+      <div className="border-2 rounded-md text-sm text-center absolute top-[-20px] left-[-20px] w-14 h-10 font-semibold bg-cyan-500 m-2 p-2 text-emerald-800 shadow-2xl shadow-slate-800">
        {item.year}
         </div>
-       <h2 className="m-1 font-semibold text-slate-600">{item.title}</h2> 
+       <h2 className="m-3 font-semibold text-center text-cyan-600 border-y-2 border-gray-100">{item.title}</h2> 
           
-         <p>{item.description}</p> 
+         <p className="text-gray-600">{item.description}</p> 
         
         
      </div>

@@ -1,5 +1,6 @@
 
-
+import { MicrophoneIcon, MusicalNoteIcon, AdjustmentsHorizontalIcon } from '@heroicons/react/20/solid'
+import { twitter, linkedin, instagram, facebook } from "../assets"
 
 export const navLinks = [
     {
@@ -7,12 +8,12 @@ export const navLinks = [
       title: "Home",
     },
     {
-      id: "photos",
-      title: "Photos",
+      id: "about",
+      title: "About",
     },
     {
-      id: "product",
-      title: "Product",
+      id: "photos",
+      title: "Photos",
     },
     {
       id: "awards",
@@ -42,7 +43,7 @@ export const navLinks = [
   
   export const footerLinks = [
     {
-      title: "Useful Links",
+      title: "Nav Links",
       links: [
         {
           name: "Content",
@@ -108,25 +109,44 @@ export const navLinks = [
   
   export const socialMedia = [
     {
-      id: "social-media-1",
-      icon: "instagram",
-      link: "https://www.instagram.com/",
+      id: "instagram",
+      icon: instagram,
+      link: "https://www.instagram.com/papabillsgh/?hl=en",
     },
     {
-      id: "social-media-2",
-      icon: "facebook",
-      link: "https://www.facebook.com/",
+      id: "facebook",
+      icon: facebook,
+      link: "https://web.facebook.com/bills.papa/?_rdc=1&_rdr",
     },
     {
-      id: "social-media-3",
-      icon: "twitter",
-      link: "https://www.twitter.com/",
+      id: "twitter",
+      icon: twitter,
+      link: "https://twitter.com/papabillsgh?lang=en",
     },
     {
       id: "social-media-4",
-      icon: "linkedin",
+      icon: linkedin,
       link: "https://www.linkedin.com/",
     },
   ];
+
+  export const features = [
+    {
+      name: 'Adom 106.3 FM.',
+      description:
+        'Tune in to Efiada Mbosuo on Adom 106.3 FM from 7pm till 11pm with Papa Bills & Don Itchi',
+      icon: MicrophoneIcon,
+    },
+    {
+      name: 'Hitz 103.9 FM.',
+      description: 'Tune from 10am till 12noon hilifebliss',
+      icon: MusicalNoteIcon,
+    },
+    {
+      name: 'Adom FM.',
+      description: 'Popular drive time show producer . Ofie Kwanso',
+      icon: AdjustmentsHorizontalIcon,
+    },
+  ]
   
  

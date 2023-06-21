@@ -7,18 +7,26 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import discount from "./Discount.svg";
-import feature from "./p1.png"
+import featureLogo from "./p1.png"
 import mic from "./mic.svg"
+import twitter from "./twitter.svg"
+import instagram from "./instagram.svg"
+import linkedin from "./linkedin.svg"
+import facebook from "./facebook.svg"
 
 export {
   
   logo,
   quotes,
   robot,
-  feature,
+  featureLogo,
   menu,
   close,
   mic,
   discount,
+  twitter,
+  instagram,
+  linkedin,
+  facebook
  
 };

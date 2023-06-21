@@ -1,33 +1,16 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
-import { feature } from './assets'
+import { featureLogo } from './assets'
+import { features } from './constants'
 
-const features = [
-  {
-    name: 'Adom 106.3 FM.',
-    description:
-      'Tune in to Efiada Mbosuo on Adom 106.3 FM from 7pm till 11pm with Papa Bills & Don Itchi',
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: 'Hitz 103.9 FM.',
-    description: 'Tune from 10am till 12noon hilifebliss',
-    icon: LockClosedIcon,
-  },
-  {
-    name: 'Adom FM.',
-    description: 'Popular drive time show producer . Ofie Kwanso',
-    icon: ServerIcon,
-  },
-]
+
 
 export default function About() {
   return (
-    <div className="overflow-hidden bg-slate-300 py-24 sm:py-32">
+    <div className="overflow-hidden bg-slate-300 py-24 sm:py-32 border-b-1 border-gray-300 rounded-md">
       <div className=" flex flex-col md:flex-row mx-auto max-w-7xl px-6 lg:px-8 gap-2">
         <div className="flex-1 flex justify-center items-center md:my-0 my-10 opacity-80 relative overflow-hidden hover:opacity-100" >
             <Image
-                    src={feature}
+                    src={featureLogo}
                     alt="Picture of papa bills"
                     className="w-[30rem] max-w-none sm:w-[40rem] md:-ml-4 lg:-ml-0 rounded-full"
                     width={500}
@@ -54,7 +37,7 @@ export default function About() {
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
-                      <feature.icon className="absolute left-1 top-1 h-5 w-5 text-indigo-600" aria-hidden="true" />
+                      <feature.icon className="absolute left-1 top-1 h-5 w-5 text-cyan-500" aria-hidden="true" />
                       {feature.name}
                     </dt>{' '}
                     <dd className="inline">{feature.description}</dd>
