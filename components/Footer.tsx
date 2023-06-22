@@ -21,7 +21,7 @@ const Footer = () => {
           {
             socialMedia.map((social)=>(
               
-              <button className="bg-white hover:bg-gray-200 text-lightBlue-400 shadow-lg hover:shadow-2xl font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+              <button className="transition ease-in-out delay-150 bg-white hover:bg-gray-200 text-lightBlue-400 shadow-lg hover:shadow-2xl font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
             <Link href={social.link}><Image src={social.icon} alt={social.id} width={18} height={18} className="ml-3"/></Link></button>
 
             )

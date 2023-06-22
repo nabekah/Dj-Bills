@@ -37,12 +37,9 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
         <title>Dj Papa Bills</title>
         <meta
           property="og:image"
-          content="https://nextjsconf-pics.vercel.app/og-image.png"
+          content="https://dj-bills-nabekah.vercel.app/_next/static/media/logo.2323ab32.svg"
         />
-        <meta
-          name="twitter:image"
-          content="https://nextjsconf-pics.vercel.app/og-image.png"
-        />
+       
       </Head>
       <main className="bg-primary overflow-hidden">
         //nav

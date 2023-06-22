@@ -31,11 +31,11 @@ export default function Awards() {
     
     return(
      
-     <div key={item.id} className="relative px-9 mx-6 py-4 my-4 bg-stone-200 border-2 rounded-md shadow-md">
+     <div key={item.id} className=" transition ease-in-out delay-150  bg-stone-200 hover:-translate-y-1 hover:scale-110 duration-150 relative px-9 mx-6 py-4 my-4 border-2 border-gray-300 rounded-md shadow-md hover:bg-gray-200 hover:shadow-md hover:shadow-cyan-600">
       <div className="border-2 rounded-md text-sm text-center absolute top-[-20px] left-[-20px] w-14 h-10 font-semibold bg-cyan-600 m-2 p-2 text-emerald-800 shadow-2xl shadow-slate-800">
        {item.year}
         </div>
-       <h2 className="m-3 font-semibold text-lg text-center text-cyan-600 border-y-2 border-gray-200 capitalize shadow-sm">{item.title}</h2> 
+       <h2 className="m-3 font-semibold text-lg text-center text-cyan-600 border-y-2 border-gray-300 capitalize shadow-md">{item.title}</h2> 
           
          <p className="text-gray-700 overflow-auto">{item.description}</p> 
         
