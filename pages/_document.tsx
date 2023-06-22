@@ -23,7 +23,7 @@ class MyDocument extends Document {
             content="See pictures from Next.js Conf and the After Party."
           />
         </Head>
-        <body className="antialiased w-full">
+        <body className="antialiased">
           <Main />
           <NextScript />
         </body>

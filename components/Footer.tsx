@@ -9,8 +9,8 @@ const Footer = () => {
   return (
  
 
-<footer className="relative bg-slate-300 pt-8 pb-6">
-  <div className="container mx-auto px-4">
+<div className=" flex md:flex-row flex-col  bg-gray-300 pt-8 pb-6 xl:max-w-[1280px] w-full">
+  <div className="w-full mx-auto px-4">
     <div className="flex flex-wrap text-left lg:text-left">
       <div className="w-full lg:w-6/12 px-4">
         <h4 className="text-3xl text-semibold text-cyan-700 ">Stay in touch, always!</h4>
@@ -21,7 +21,7 @@ const Footer = () => {
           {
             socialMedia.map((social)=>(
               
-              <button className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+              <button className="bg-white hover:bg-gray-200 text-lightBlue-400 shadow-lg hover:shadow-2xl font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
             <Link href={social.link}><Image src={social.icon} alt={social.id} width={18} height={18} className="ml-3"/></Link></button>
 
             )
@@ -72,7 +72,7 @@ const Footer = () => {
       </div>
     </div>
   </div>
-</footer>
+</div>
   )
 }
 
