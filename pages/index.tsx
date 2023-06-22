@@ -75,7 +75,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
             }}
           />
         )}
-        <div className="bg-primary flex justify-center items-start">
+        <div id="photos" className="bg-primary flex justify-center items-start">
           <div className="xl:max-w-[1280px] w-full">
 
             <div className=" xl:max-w-[1280px] w-full columns-1 gap-4 sm:columns-2 xl:columns-5 2xl:columns-6">
@@ -109,7 +109,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
 
           </div>
         </div>
-        <section className="flex justify-center items-center bg-gray-300">
+        <section id="awards" className="flex justify-center items-center bg-gray-300">
           
           <Awards />
           

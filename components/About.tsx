@@ -6,7 +6,7 @@ import { features } from './constants'
 
 export default function About() {
   return (
-    <div className="overflow-hidden bg-gray-300 py-24 sm:py-32">
+    <div id="about" className="overflow-hidden bg-gray-300 py-24 sm:py-32">
       <div className=" flex flex-col md:flex-row mx-auto max-w-7xl px-6 lg:px-8 gap-2">
         <div className="flex-1 flex justify-center items-center md:my-0 my-10 relative overflow-hidden" >
             <Image
