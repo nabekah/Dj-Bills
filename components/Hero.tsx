@@ -4,6 +4,7 @@ import {discount, robot} from './assets'
 import GetStarted from './GetStarted'
 import Image from 'next/image'
 import Link from 'next/link'
+import styles from '../style'
 
 
 const Hero = () => (
@@ -33,16 +34,16 @@ const Hero = () => (
     <div className="flex-1 flex justify-center items-center md:my-0 mx-5 my-10 relative">
       <Image
         src={robot}
-        width='493'
+        width='571'
         height='493'
         alt="dj bills"
         priority={true}
-        className='relative z-[5] rounded-full cursor-pointer filter grayscale hover:grayscale-0 shadow-2xl transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-white/30'
+        className='relative z-[5] rounded-full md:scale-125 cursor-pointer border-cyan-100 border shadow-cyan-800 shadow-2xl transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-white/30'
 
       />
-      <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-      <div className='absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient' />
-      <div className='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient' />
+      <div className="absolute z-[0] w-[60%] h-[80%] top-0 pink__gradient"></div>
+      <div className='absolute z-[1] w-[40%] h-[60%] rounded-md bottom-40 white__gradient' ></div>
+      <div className='absolute z-[2] w-[20%] h-[60%] right-20 bottom-20 blue__gradient' ></div>
     </div>
     <div className="ss:hidden flex justify-center items-center">
       <GetStarted />

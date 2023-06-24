@@ -13,6 +13,7 @@ import twitter from "./twitter.svg"
 import instagram from "./instagram.svg"
 import linkedin from "./linkedin.svg"
 import facebook from "./facebook.svg"
+import arrowDown from "./arrowdown.svg"
 
 export {
   
@@ -27,6 +28,8 @@ export {
   twitter,
   instagram,
   linkedin,
-  facebook
+  facebook,
+  arrowDown
+
  
 };

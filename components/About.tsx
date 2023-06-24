@@ -1,11 +1,13 @@
 import Image from 'next/image'
-import { featureLogo } from './assets'
+import { featureLogo, arrowDown } from './assets'
 import { features } from './constants'
 
 
 
 export default function About() {
   return (
+    <div>
+     <div className='flex justify-center items-center pt-2'><Image className="animate-bounce" src={arrowDown} width={32} height={32} /></div>
     <div id="about" className="overflow-hidden bg-gray-300 py-24 sm:py-32">
       <div className=" flex flex-col md:flex-row mx-auto max-w-7xl px-6 lg:px-8 gap-2">
         <div className="flex-1 flex justify-center items-center md:my-0 my-10 relative overflow-hidden" >
@@ -24,7 +26,7 @@ export default function About() {
             <div className="lg:max-w-lg">
               {/* <h2 className="text-base font-semibold leading-7 text-gradient">Deploy faster</h2> */}
               <p className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl"> <span className='inline-block text-cyan-500 text-center bg-gray-500 px-1 py-0 m-1 rounded-[6px]'>Entertainment at its finest </span></p>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-lg leading-8 text-gray-700">
                 Papa Bills is a powerhouse in the Ghanaian entertainment industry. 
                 As one of the biggest disc jockeys and radio producers, he has earned a reputation for his 
                 unparalleled skills and expertise. His work as a promoter has led the way, showcasing the hottest 
@@ -49,6 +51,7 @@ export default function About() {
           
         </div>
       </div>
+    </div>
     </div>
   )
 }

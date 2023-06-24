@@ -17,7 +17,7 @@ class MyDocument extends Document {
           />
           <meta property="og:title" content="DJ Papa Bills" />
                           </Head>
-        <body className="antialiased">
+        <body className="antialiased font-poppins">
           <Main />
           <NextScript />
         </body>
