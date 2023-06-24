@@ -7,7 +7,7 @@ import { features } from './constants'
 export default function About() {
   return (
     <div>
-     <div className='flex justify-center items-center pt-2'><Image className="animate-bounce" src={arrowDown} width={32} height={32} /></div>
+     <div className='flex justify-center items-center pt-2'><Image className="animate-bounce" alt="down arrow"src={arrowDown} width={32} height={32} /></div>
     <div id="about" className="overflow-hidden bg-gray-300 py-24 sm:py-32">
       <div className=" flex flex-col md:flex-row mx-auto max-w-7xl px-6 lg:px-8 gap-2">
         <div className="flex-1 flex justify-center items-center md:my-0 my-10 relative overflow-hidden" >
