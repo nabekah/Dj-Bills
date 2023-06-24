@@ -57,11 +57,11 @@ export default function Awards() {
                     <div className="animate-pulse w-1/3 h-3 bg-sky-300"></div>
                 </div>
                 <div className="space-y-2">
-                    <div className="animate-pulse w-3/4 h-3 bg-slate-400"></div>
-                    <div className=" text-cyan-800 text-sm w-full h-5 bg-slate-400">
+                    <div className="animate-pulse w-3/4 h-3 bg-slate-300"></div>
+                    <div className=" text-cyan-800 text-sm w-full h-5 bg-slate-300">
                     {item.description}
                     </div>
-                    <div className="animate-pulse w-2/3 h-3 bg-slate-400"></div>
+                    <div className="animate-pulse w-2/3 h-3 bg-slate-300"></div>
                 </div>
             </div>
          
