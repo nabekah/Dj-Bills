@@ -106,7 +106,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
 
           </div>
         </div>
-        <section id="awards" className="flex justify-center items-center bg-gray-300">
+        <section id="awards" className="flex p-5 justify-center items-center bg-gray-300">
           
           <Awards />
           
