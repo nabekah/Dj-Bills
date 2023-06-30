@@ -48,6 +48,16 @@ const data =[{
 
 
 export default function Awards() {
+    const leftScroll = () => {
+        var slider = document.getElementById('slider');
+        slider.scrollLeft= slider.scrollLeft - 500;
+      
+    };
+     const rightScroll = () => {
+        var slider = document.getElementById('slider');
+        slider.scrollLeft= slider.scrollLeft + 500;
+  
+    };
     const eachaward = data.map(item => {
 
         return (
@@ -104,19 +114,19 @@ export default function Awards() {
 
 
     return (
-       <div className=" relative flex w-[95%] md:w-[70%] items-center  justify-center">
-          <ChevronLeftIcon className="  text-cyan-600 hover:text-cyan-500 hover:scale-125 transition duration-300 w-20 cursor-pointer"/> 
+       <div  className=" relative flex w-[95%] md:w-[70%] items-center  justify-center">
+          <ChevronLeftIcon onClick={leftScroll} className="  text-cyan-600 hover:text-cyan-500 hover:scale-125 transition duration-300 w-20 cursor-pointer"/> 
         
-        <section className=" w-[100%] h-[100%] scroll-smooth overflow-x-scroll snap-x
+        <section id='slider' className="w-[100%] h-[100%] scroll-smooth overflow-x-scroll snap-x
                              snap-mandatory  
                             whitespace-nowrap text-gray-800 mt-4 ">
                                
-            <div className="flex  w-full h-full space-x-6 justify-center flex-row">
+            <div className="flex ml-8 w-full h-full space-x-6 flex-row">
                 {eachaward}
             </div>
            
         </section>
-         <ChevronRightIcon onClick={scrollX}  className=" text-cyan-600 hover:text-cyan-500 hover:scale-125 transition duration-300 w-20 cursor-pointer"/> 
+         <ChevronRightIcon onClick={rightScroll}  className=" text-cyan-600 hover:text-cyan-500 hover:scale-125 transition duration-300 w-20 cursor-pointer"/> 
         </div>
     )
 }
