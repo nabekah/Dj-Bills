@@ -1,5 +1,6 @@
 'use client';
 import Image from "next/image";
+import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/20/solid'
 
 const data =[{
     id:1,
@@ -52,7 +53,7 @@ export default function Awards() {
         return (
 
             <div key={item.id}
-                className=" snap-center hover:scroll-auto flex-shrink-0 w-[280px] h-[80%] mr-10 ml-4 mt-20 mb-10 drop-shadow-md rounded-lg transition ease-in-out delay-150 
+                className=" snap-center hover:scroll-auto flex-shrink-0 w-[220px] h-[80%] mt-20 mb-10 drop-shadow-md rounded-lg transition ease-in-out delay-150 
                  bg-stone-200 hover:-translate-y-1 hover:scale-105 duration-150 relative  border-1 
                     border-gray-300 shadow-md hover:bg-gray-200 hover:shadow-md hover:shadow-cyan-600"
             >
@@ -64,9 +65,9 @@ export default function Awards() {
                 </div>
 
 
-                <div className="w-full h-[280px] bg-slate-400">
+                <div className="w-full h-[280px]">
                     <Image
-                        className="rounded-md object-cover w-full h-full shadow border border-slate-400"
+                        className="rounded-md object-cover w-full h-full shadow-lg border border-slate-400"
                         src={item.img}
                         alt={item.img}
                         width={300}
@@ -103,12 +104,19 @@ export default function Awards() {
 
 
     return (
-        <section className=" w-[90%] h-[100%] relative flex scroll-smooth overflow-x-scroll snap-x
+       <div className=" relative flex w-[95%] md:w-[70%] items-center  justify-center">
+          <ChevronLeftIcon className="  text-cyan-600 hover:text-cyan-500 hover:scale-125 transition duration-300 w-20 cursor-pointer"/> 
+        
+        <section className=" w-[100%] h-[100%] scroll-smooth overflow-x-scroll snap-x
                              snap-mandatory  
-                            whitespace-nowrap text-gray-800 mt-4 items-center">
-            <div className="flex w-full h-full space-x-8  flex-row">
+                            whitespace-nowrap text-gray-800 mt-4 ">
+                               
+            <div className="flex  w-full h-full space-x-6 justify-center flex-row">
                 {eachaward}
             </div>
+           
         </section>
+         <ChevronRightIcon onClick={scrollX}  className=" text-cyan-600 hover:text-cyan-500 hover:scale-125 transition duration-300 w-20 cursor-pointer"/> 
+        </div>
     )
 }
