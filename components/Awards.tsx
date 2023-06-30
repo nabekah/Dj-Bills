@@ -63,7 +63,7 @@ export default function Awards() {
         return (
 
             <div key={item.id}
-                className=" snap-center hover:scroll-auto flex-shrink-0 w-[220px] h-[80%] mt-20 mb-10 drop-shadow-md rounded-lg transition ease-in-out delay-150 
+                className="snap-center hover:scroll-auto flex-shrink-0 w-[220px] h-[80%] mt-20 mb-10 drop-shadow-md rounded-lg transition ease-in-out delay-150 
                  bg-stone-200 hover:-translate-y-1 hover:scale-105 duration-150 relative  border-1 
                     border-gray-300 shadow-md hover:bg-gray-200 hover:shadow-md hover:shadow-cyan-600"
             >
