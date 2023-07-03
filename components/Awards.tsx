@@ -102,7 +102,7 @@ export default function Awards() {
                     <video controls
                     className="rounded-md object-cover w-full h-full shadow shadow-cyan-600 border border-slate-400"
                     src={item.img}
-                    alt={item.img}
+                    
                     width={300}
                     height={300}
                 />
