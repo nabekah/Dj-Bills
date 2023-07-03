@@ -54,7 +54,7 @@ const data =[{
     title:"Entertainment",
     description:"Nominated in Best Radio",
     img:"/video1.mp4",
-    links:"wwww",
+    links:"wwww.admon.com",
     isVideo:true
 },
 {
@@ -63,7 +63,7 @@ const data =[{
     title:"Entertainment",
     description:"Nominated in Best Radio",
     img:"/video2.mp4",
-    links:"wwww",
+    links:"wwww.admon.com",
     isVideo:true
 }]
 
