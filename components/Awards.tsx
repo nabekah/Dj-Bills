@@ -8,7 +8,8 @@ const data =[{
     title:"Ghana DJ awards",
     description:"Gospel DJ of the Year",
     img:"/award20-1.jpeg",
-    links:"wwww"
+    links:"wwww",
+    isVideo:false
 
 
 },
@@ -17,7 +18,8 @@ const data =[{
     title:"Ghana DJ awards",
     description:" Highlife DJ of the Year",
     img:"/award22-1.jpeg",
-    links:"wwww"
+    links:"wwww",
+    isVideo:false
 },
 {
     id:3,
@@ -25,7 +27,8 @@ const data =[{
     title:"ghana DJ awards",
     description:"Best gosple DJ of the Year",
     img:"/awards23-3.jpeg",
-    links:"wwww"
+    links:"wwww",
+    isVideo:false
 },
 {
     id:4,
@@ -33,8 +36,8 @@ const data =[{
     title:"GEA-USA Nomination",
     description:"Nominated in Best Radio",
     img:"/awards23-2.jpeg",
-   
-    links:"wwww"
+    links:"wwww",
+    isVideo:false
 },
 {
     id:5,
@@ -42,7 +45,26 @@ const data =[{
     title:"Entertainment",
     description:"Nominated in Best Radio",
     img:"/award23-1.jpeg",
-    links:"wwww"
+    links:"wwww",
+    isVideo:false
+},
+{
+    id:6,
+    year:"2023",
+    title:"Entertainment",
+    description:"Nominated in Best Radio",
+    img:"/video1.mp4",
+    links:"wwww",
+    isVideo:true
+},
+{
+    id:7,
+    year:"2023",
+    title:"Entertainment",
+    description:"Nominated in Best Radio",
+    img:"/video2.mp4",
+    links:"wwww",
+    isVideo:true
 }]
 
 
@@ -76,13 +98,22 @@ export default function Awards() {
 
 
                 <div className="w-full h-[250px]">
-                    <Image
+                   { item.isVideo? (
+                    <video controls
+                    className="rounded-md object-cover w-full h-full shadow shadow-cyan-600 border border-slate-400"
+                    src={item.img}
+                    alt={item.img}
+                    width={300}
+                    height={300}
+                />
+                   ):(
+                   <Image
                         className="rounded-md object-cover w-full h-full shadow shadow-cyan-600 border border-slate-400"
                         src={item.img}
                         alt={item.img}
                         width={300}
                         height={300}
-                    />
+                    />)}
                 </div>
                 <div className="p-1 space-y-2">
                     <h4 className=" text-sm font w-3/3 h-6  text-gray-600 
@@ -90,9 +121,9 @@ export default function Awards() {
                         {item.title}
                     </h4>
                     
-                    <div className="space-y-2">
+                    <div className="space-y-2 w-full h-15">
                         
-                        <p className=" overflow-x-visible text-gray-700  font-semibold text-sm md:text-md w-full h-5">
+                        <p className=" overflow-x-visible text-gray-700  font-semibold text-sm md:text-md">
                             {item.description}
                         </p>
                     </div>
